@@ -1,0 +1,75 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "classLabelProbs",
+        "shortDescription" : "Probability of each category"
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "classLabel",
+        "shortDescription" : "Most likely image category"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "author" : "Farhandika",
+    "specificationVersion" : 3,
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.14",
+      "tvOS" : "12.0",
+      "watchOS" : "unavailable",
+      "iOS" : "12.0",
+      "macCatalyst" : "12.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_imageClassifier",
+      "structure" : [
+        {
+          "name" : "MLModelType_visionFeaturePrint"
+        },
+        {
+          "name" : "MLModelType_glmClassifier"
+        }
+      ]
+    },
+    "inputSchema" : [
+      {
+        "formattedType" : "Image (Color 299 × 299)",
+        "hasSizeFlexibility" : "1",
+        "shortDescription" : "Input image to be classified",
+        "sizeRange" : "[[299, -1], [299, -1]]",
+        "width" : "299",
+        "type" : "Image",
+        "isColor" : "1",
+        "height" : "299",
+        "sizeFlexibility" : "299... × 299...",
+        "colorspace" : "BGR",
+        "name" : "image",
+        "isOptional" : "0"
+      }
+    ],
+    "classLabels" : [
+      "kawung",
+      "megamendung",
+      "simbut"
+    ],
+    "generatedClassName" : "ngebatikClassifier",
+    "userDefinedMetadata" : {
+      "com.apple.createml.app.tag" : "78.5",
+      "com.apple.createml.version" : "12.0.1",
+      "com.apple.coreml.model.preview.type" : "imageClassifier",
+      "com.apple.createml.app.version" : "3.0"
+    },
+    "method" : "predict"
+  }
+]
