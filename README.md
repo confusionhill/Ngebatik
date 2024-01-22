@@ -12,3 +12,4 @@ Ngebatik is a learning medium to introduce Batik to a wider audience. This proje
 4. Runs it
 
 # Result
+![IMG_0787](https://github.com/confusionhill/Ngebatik/assets/71744284/ea9993a0-1edc-4b3e-a4ef-54b4643f2795)
